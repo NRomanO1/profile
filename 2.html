@@ -1,0 +1,48 @@
+<meta charset = "utf-8">
+
+<script>
+	var number = Math.floor(Math.random() * 100)+1;
+	console.log(number);
+	var player1 = prompt ("Введите имя 1-ого игрока ", 'Имя');
+	var player2 = prompt ("Введите имя 2-ого игрока ", 'Имя');
+	
+	
+	 while ((user_number1 != number) || ((user_number2 != number)))  {
+		if (user_number2 != number) {
+			var user_number1 = prompt (player1 + " ваш ход,какое число загадано? (от 1 до 100)", 0);
+			if ((user_number1 > 0) && (user_number1 <= 100)) {
+				if (user_number1 == number) {
+					alert('Вы угадали! ' + player1 + ' победил!!');
+			}  else if (user_number1 > number) {
+				alert ('Загаданое число меньше');
+			} else {
+				alert ('Загаданое число больше');
+			}
+			} else {
+				alert('Неверный ввод')
+			}
+		} 
+		else {
+		break;
+		}
+		if (user_number1 != number) {
+			var user_number2 = prompt (player2 +" ваш ход,какое число загадано? (от 1 до 100)", 0);
+			if ((user_number2 > 0) && (user_number2 <= 100)) {
+				if (user_number2 == number) {
+					alert('Вы угадали! ' + player2 + ' победил!!');
+			}  else if (user_number2 > number) {
+				alert ('Загаданое число меньше');
+			} else {
+				alert ('Загаданое число больше');
+			}
+			} else {
+				alert('Неверный ввод')
+			}
+		}
+		else {
+		break;
+		}
+	}
+
+	</script>
+	

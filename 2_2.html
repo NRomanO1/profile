@@ -1,0 +1,160 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Личный сайт студента</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		<a href="2_2.html">Загадки</a><span>/</span>
+		<a href="2.html">Угадайка</a><span>/</span>
+		<a href="#">Угадайка мультиплеер</a><span>/</span>
+	</div>
+
+<style>
+.alert {
+  padding: 15px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #dff0d8;
+}
+</style>
+
+<div class="alert">
+  <strong>Загадка 1: </strong> 
+  </div>
+<div class="alert">
+  Не ездок, а со шпорами,
+  не будильник, а всех будит.
+</div>
+
+<script>
+var otvet = prompt("Введите ответ на первую загадку :");
+var prav1 = 'Петух';
+var prav2 = 'петух';
+var ch = 0;
+var chp = 0;
+var chn = 0;
+var net = 0;
+ch = ch + 1;
+if (prav1 == otvet) {
+chp = chp + 1;
+alert('Правильно');
+}
+else if (prav2 == otvet) {
+chp = chp + 1;
+alert('Правильно');
+}
+else if (otvet == '') {
+net = net + 1;
+alert('Вы не ответили')
+}
+else {
+alert('Не правильно')
+}
+</script>
+
+<div class="alert">
+Ответ: Петух
+</div>
+<div class="alert">
+  <strong>Загадка 2: </strong> 
+  </div>
+<div class="alert">
+Не лает, не кусает, а к будке привязана.
+</div>
+<script>
+var otvet = prompt("Введите ответ на вторую загадку :");
+var prav1 = 'Цепь';
+var prav2 = 'цепь';
+ch = ch + 1;
+if (prav1 == otvet) {
+chp = chp + 1;
+alert('Правильно');
+}
+else if (prav2 == otvet) {
+chp = chp + 1;
+alert('Правильно');
+}
+else if (otvet == '') {
+net = net + 1;
+alert('Вы не ответили')
+}
+else {
+alert('Не правильно');
+}
+</script>
+<div class="alert">
+Ответ: Цепь
+</div>
+<div class="alert">
+  <strong>Загадка 3: </strong> 
+  </div>
+<div class="alert">
+Каким инструментом можно щи хлебать?
+</div>
+<script>
+var otvet = prompt("Введите ответ на третью загадку :");
+var prav1 = 'Ложка';
+var prav2 = 'ложка';
+ch = ch + 1;
+if (prav1 == otvet) {
+chp = chp + 1;
+alert('Правильно');
+}
+else if (prav2 == otvet) {
+chp = chp + 1;
+alert('Правильно');
+}
+else if (otvet == '') {
+net = net + 1;
+alert('Вы не ответили')
+}
+else {
+alert('Не правильно');
+}
+</script>
+<div class="alert">
+Ответ: Ложка
+</div>
+<div class="alert">
+  <strong>Загадка 4: </strong> 
+  </div>
+<div class="alert">
+На ушах висят, а не сережки.
+</div>
+<script>
+var otvet = prompt("Введите ответ на четвертую загадку :");
+var prav1 = 'Наушники';
+var prav2 = 'наушники';
+ch = ch + 1;
+if (prav1 == otvet) {
+chp = chp + 1;
+alert('Правильно');
+}
+else if (prav2 == otvet) {
+chp = chp + 1;
+alert('Правильно');
+}
+else if (otvet == '') {
+net = net + 1;
+alert('Вы не ответили')
+}
+else {
+alert('Не правильно');
+}
+</script>
+<div class="alert">
+Ответ: Наушники
+</div>
+<script>
+var a = 0;
+a = (chp * 100)/ ch;
+alert('Вы справились на '+ a + '%');
+alert('Вы сделали ' + chp + ' правильных(й) ответ(а) из ' + ch + ' загадок , не ответили на ' + net + ' загадки(у).');
+
+</script>
+</body>
+</html>
